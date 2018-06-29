@@ -1,6 +1,6 @@
 <template>
   <div ref="wrapper">
-    <div class="scroll-content">
+    <div class="scroll-content" :style="{width:width}">
       <slot></slot>
       <slot name="pullup"
             :pullUpLoad="pullUpLoad"
@@ -46,6 +46,9 @@
   export default {
     name: 'vue-better-scroll',
     props: {
+      width: {
+        type: Number
+      },
       probeType: {
         type: Number,
         default: 1
