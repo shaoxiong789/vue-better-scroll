@@ -46,6 +46,9 @@
   export default {
     name: 'vue-better-scroll',
     props: {
+      height: {
+        type: Number
+      },
       width: {
         type: Number
       },
